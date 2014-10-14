@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{180857AE-54CE-4A58-B85C-3D6CF9DD6638}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Allors.Testing.Webforms.Tests</RootNamespace>
+    <AssemblyName>Allors.Testing.Webforms.Tests.WebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mocked\MockedHttpHandler2.cs" />
+    <Compile Include="mocked\MockedHttpHandler.cs" />
+    <Compile Include="mocked\MockedMembershipProvider.cs" />
+    <Compile Include="mocked\MockedRoleProvider.cs" />
+    <Compile Include="CheckBoxListPage.aspx.cs">
+      <DependentUpon>CheckBoxListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckBoxListPage.aspx.designer.cs">
+      <DependentUpon>CheckBoxListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBoxPage.aspx.cs">
+      <DependentUpon>CheckBoxPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckBoxPage.aspx.designer.cs">
+      <DependentUpon>CheckBoxPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Header.aspx.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header.aspx.designer.cs">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routing\Route.aspx.cs">
+      <DependentUpon>Route.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routing\Route.aspx.designer.cs">
+      <DependentUpon>Route.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlButtonPage.aspx.cs">
+      <DependentUpon>HtmlButtonPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HtmlButtonPage.aspx.designer.cs">
+      <DependentUpon>HtmlButtonPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LinkButtonPage.aspx.cs">
+      <DependentUpon>LinkButtonPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LinkButtonPage.aspx.designer.cs">
+      <DependentUpon>LinkButtonPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnTextChangedTextBox.cs" />
+    <Compile Include="TransferFromPage.aspx.cs">
+      <DependentUpon>TransferFromPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransferFromPage.aspx.designer.cs">
+      <DependentUpon>TransferFromPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferToPage.aspx.cs">
+      <DependentUpon>TransferToPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransferToPage.aspx.designer.cs">
+      <DependentUpon>TransferToPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButtonPage.aspx.cs">
+      <DependentUpon>RadioButtonPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RadioButtonPage.aspx.designer.cs">
+      <DependentUpon>RadioButtonPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptedViewStatePage.aspx.cs">
+      <DependentUpon>EncryptedViewStatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EncryptedViewStatePage.aspx.designer.cs">
+      <DependentUpon>EncryptedViewStatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectPage.aspx.cs">
+      <DependentUpon>SelectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectPage.aspx.designer.cs">
+      <DependentUpon>SelectPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectUserControl.ascx.cs">
+      <DependentUpon>SelectUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectUserControl.ascx.designer.cs">
+      <DependentUpon>SelectUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedirectFromPage.aspx.cs">
+      <DependentUpon>RedirectFromPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedirectFromPage.aspx.designer.cs">
+      <DependentUpon>RedirectFromPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedirectToPage.aspx.cs">
+      <DependentUpon>RedirectToPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RedirectToPage.aspx.designer.cs">
+      <DependentUpon>RedirectToPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestersOnly\TestersOnlyPage.aspx.cs">
+      <DependentUpon>TestersOnlyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestersOnly\TestersOnlyPage.aspx.designer.cs">
+      <DependentUpon>TestersOnlyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxWithoutViewState.aspx.cs">
+      <DependentUpon>TextBoxWithoutViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TextBoxWithoutViewState.aspx.designer.cs">
+      <DependentUpon>TextBoxWithoutViewState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButtonListPage.aspx.cs">
+      <DependentUpon>RadioButtonListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RadioButtonListPage.aspx.designer.cs">
+      <DependentUpon>RadioButtonListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DropDownListPage.aspx.cs">
+      <DependentUpon>DropDownListPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DropDownListPage.aspx.designer.cs">
+      <DependentUpon>DropDownListPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextBoxPage.aspx.cs">
+      <DependentUpon>TextBoxPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TextBoxPage.aspx.designer.cs">
+      <DependentUpon>TextBoxPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxUserControl.ascx.cs">
+      <DependentUpon>TextBoxUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TextBoxUserControl.ascx.designer.cs">
+      <DependentUpon>TextBoxUserControl.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="binary\logo.png" />
+    <Content Include="Header.aspx" />
+    <Content Include="Routing\Route.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HtmlButtonPage.aspx" />
+    <Content Include="Web.Config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CheckBoxListPage.aspx" />
+    <Content Include="CheckBoxPage.aspx" />
+    <Content Include="LinkButtonPage.aspx" />
+    <Content Include="TransferFromPage.aspx" />
+    <Content Include="TransferToPage.aspx" />
+    <Content Include="RadioButtonPage.aspx" />
+    <Content Include="EncryptedViewStatePage.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="SelectPage.aspx" />
+    <Content Include="SelectUserControl.ascx" />
+    <Content Include="Login.aspx" />
+    <Content Include="RedirectFromPage.aspx" />
+    <Content Include="RedirectToPage.aspx" />
+    <Content Include="TestersOnly\TestersOnlyPage.aspx" />
+    <Content Include="TextBoxWithoutViewState.aspx" />
+    <Content Include="RadioButtonListPage.aspx" />
+    <Content Include="DropDownListPage.aspx" />
+    <Content Include="TextBoxPage.aspx" />
+    <Content Include="TextBoxUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Settings.StyleCop" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>64738</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

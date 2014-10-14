@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE0657DD-68CF-4937-9580-28F9A2D80562}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Allors.Testing.Webforms</RootNamespace>
+    <AssemblyName>Allors.Testing.Webforms</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\Client\AfterAttribute.cs" />
+    <Compile Include="Attributes\LifeCycleEventAttribute.cs" />
+    <Compile Include="Attributes\Application\AcquireRequestStateAttribute.cs" />
+    <Compile Include="Attributes\Application\ApplicationLifeCycleEventAttribute.cs" />
+    <Compile Include="Attributes\Application\AuthenticateRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\AuthorizeRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\BeginRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\ApplicationErrorRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\UpdateRequestCacheAttribute.cs" />
+    <Compile Include="Attributes\Application\ResolveRequestCacheAttribute.cs" />
+    <Compile Include="Attributes\Application\ReleaseRequestStateAttribute.cs" />
+    <Compile Include="Attributes\Application\PreSendRequestHeadersAttribute.cs" />
+    <Compile Include="Attributes\Application\PreSendRequestContentAttribute.cs" />
+    <Compile Include="Attributes\Application\PreRequestHandlerExecuteAttribute.cs" />
+    <Compile Include="Attributes\Application\PostUpdateRequestCacheAttribute.cs" />
+    <Compile Include="Attributes\Application\PostResolveRequestCacheAttribute.cs" />
+    <Compile Include="Attributes\Application\PostRequestHandlerExecuteAttribute.cs" />
+    <Compile Include="Attributes\Application\PostReleaseRequestStateAttribute.cs" />
+    <Compile Include="Attributes\Application\PostMapRequestHandlerAttribute.cs" />
+    <Compile Include="Attributes\Application\PostLogRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\PostAuthorizeRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\PostAuthenticateRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\PostAcquireRequestStateAttribute.cs" />
+    <Compile Include="Attributes\Application\MapRequestHandlerAttribute.cs" />
+    <Compile Include="Attributes\Application\LogRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\EndRequestAttribute.cs" />
+    <Compile Include="Attributes\Application\DisposedAttribute.cs" />
+    <Compile Include="Attributes\Page\AbortTransactionAttribute.cs" />
+    <Compile Include="Attributes\Page\BubbleEventAttribute.cs" />
+    <Compile Include="Attributes\Page\CommitTransactionAttribute.cs" />
+    <Compile Include="Attributes\Page\UnloadAttribute.cs" />
+    <Compile Include="Attributes\Page\SaveStateCompleteAttribute.cs" />
+    <Compile Include="Attributes\Page\PreRenderCompleteAttribute.cs" />
+    <Compile Include="Attributes\Page\PreLoadAttribute.cs" />
+    <Compile Include="Attributes\Page\PreInitAttribute.cs" />
+    <Compile Include="Attributes\Page\LoadCompleteAttribute.cs" />
+    <Compile Include="Attributes\Page\LoadAttribute.cs" />
+    <Compile Include="Attributes\Page\InitCompleteAttribute.cs" />
+    <Compile Include="Attributes\Page\InitAttribute.cs" />
+    <Compile Include="Attributes\Page\PageErrorAttribute.cs" />
+    <Compile Include="Attributes\Page\DataBindingAttribute.cs" />
+    <Compile Include="Attributes\Page\PageLifeCycleEventAttribute.cs" />
+    <Compile Include="Methods\Methods.cs" />
+    <Compile Include="Methods\LifeCycleMethod.cs" />
+    <Compile Include="WorkerResponse.cs" />
+    <Compile Include="IBrowser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ApplicationFactory.cs" />
+    <Compile Include="Attributes\WebformsTestAttribute.cs" />
+    <Compile Include="Attributes\Page\PreRenderAttribute.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="IWebformsTest.cs" />
+    <Compile Include="Testers\InvokeClick.cs" />
+    <Compile Include="Testers\DefaultTester.cs" />
+    <Compile Include="Testers\ITester.cs" />
+    <Compile Include="WebformsTestFixture.cs" />
+    <Compile Include="WebformsTestT.cs" />
+    <Compile Include="WorkerRequest.cs" />
+    <Compile Include="Events\ApplicationLifeCycleEvent.cs" />
+    <Compile Include="Events\ApplicationLifeCycleEventHandler.cs" />
+    <Compile Include="Events\PageLifeCycleEventHandler.cs" />
+    <Compile Include="HttpModule.cs" />
+    <Compile Include="WebformsTest.cs" />
+    <Compile Include="Application.cs" />
+    <Compile Include="Events\PageLifeCycleEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Settings.StyleCop" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
