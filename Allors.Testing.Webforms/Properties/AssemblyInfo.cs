@@ -30,9 +30,9 @@ using System.Runtime.InteropServices;
 
 // CLR version 
 // keep the same for compatible builds
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
 
 // Package version
 // change for every public build
-[assembly: AssemblyInformationalVersion("1.0.0")]
-[assembly: AssemblyFileVersion("1.0.0")]
+[assembly: AssemblyInformationalVersion("1.1.0")]
+[assembly: AssemblyFileVersion("1.1.0")]

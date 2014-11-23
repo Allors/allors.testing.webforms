@@ -20,7 +20,7 @@ namespace Allors.Testing.Webforms.Tests
 {
     using System.Web.UI.HtmlControls;
     using System.Web.UI.WebControls;
-
+    using Allors.Testing.Webforms.Extensions;
     using NUnit.Framework;
 
     [WebformsTest("HtmlButtonPage.aspx")]

@@ -6,7 +6,7 @@
     exit /b %errorlevel%
 )
 
-@.nuget\Nuget.exe Push publish\*.nupkg
+rem @.nuget\Nuget.exe Push publish\*.nupkg
 
 @if NOT ["%errorlevel%"]==["0"] (
     exit /b %errorlevel%

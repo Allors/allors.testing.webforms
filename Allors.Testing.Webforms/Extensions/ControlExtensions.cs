@@ -16,14 +16,14 @@
 //   along with this program.  If not, see http://www.gnu.org/licenses.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Allors.Testing.Webforms
+namespace Allors.Testing.Webforms.Extensions
 {
     using System;
     using System.Collections.Generic;
     using System.Reflection;
     using System.Web.UI;
 
-    public static class ControlExtender 
+    public static class ControlExtensions 
     {
         /// <summary>
         /// Invoke a method on this control.

@@ -19,7 +19,7 @@
 namespace Allors.Testing.Webforms.Tests
 {
     using System.Web.UI.WebControls;
-
+    using Allors.Testing.Webforms.Extensions;
     using NUnit.Framework;
 
     [WebformsTest("CheckBoxPage.aspx")]

@@ -99,6 +99,7 @@
     <Compile Include="Attributes\Page\PageErrorAttribute.cs" />
     <Compile Include="Attributes\Page\DataBindingAttribute.cs" />
     <Compile Include="Attributes\Page\PageLifeCycleEventAttribute.cs" />
+    <Compile Include="Extensions\ControlExtensions.cs" />
     <Compile Include="Methods\Methods.cs" />
     <Compile Include="Methods\LifeCycleMethod.cs" />
     <Compile Include="WorkerResponse.cs" />

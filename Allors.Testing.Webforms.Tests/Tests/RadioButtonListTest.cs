@@ -20,7 +20,7 @@ namespace Allors.Testing.Webforms.Tests
 {
     using System.Diagnostics;
     using System.Web.UI.WebControls;
-
+    using Allors.Testing.Webforms.Extensions;
     using NUnit.Framework;
 
     public class RadioButtonListTest : WebformsTest<RadioButtonListPage>
